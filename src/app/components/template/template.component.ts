@@ -9,10 +9,27 @@ import { NgForm } from '@angular/forms'
 export class TemplateComponent {
 
   usuario:Object = {
-    nombre: "Jorge",
-    apellido: "Gomez",
-    email: ""
+    nombre: null,
+    apellido: null,
+    email: null,
+    pais: "",
+    sexo: "Hombre",
+    acepta: false
   }
+
+  pais = [
+    {
+      codigo: "CLP",
+      nombre: "Chile"
+    },
+    {
+      codigo: "ESP",
+      nombre: "España"
+    }
+  ]
+
+
+  sexos: string[] = ["Hombre", "Mujer"]
 
   constructor() { }
 
